@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+nav {
+    height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+.slide {
+    width: 100%;
+    vertical-align: middle;
+    padding: 0%;
+    margin: 0%;
+    size: cover;
+}
+
+/* Caption text */
+.text {
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 10%;
+    margin-left: 2%;
+}
+
+main img {
+    width: 100%;
+    padding: 5% 2%;
+}
+
+footer {
+    padding-bottom: 5%;
+    height: auto;
+}
+
+footer h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 5%;
+    margin-left: 2%;
+}
+
+footer a, p {
+    margin-left: 2%;
+    margin-bottom: 0;
+}
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    list-style-type: none;
+}
+footer ul li a {
+    text-decoration: none;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+  }
+  
+.fa:hover {
+    opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    nav ul li {
+        display: inline-block;
+        padding-left: 8%;
+    }
+    .text {
+        position: absolute;
+        top: 90%;
+    }
+    h2 {
+        padding-top: 5%;
+        font-size: 40px;
+        margin-left: 2%;
+    }
+    .table-img {
+        display: inline-block;
+    }
+    main img {
+        width: 100%;
+        margin: 4% 0% 5% 0%;
+        padding: 2% 2%;
+    }
+    .last-column{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .last-column img{
+        width: 50%;
+        margin-top: 1%;
+    }
+    .phu-huu{
+        position: absolute;
+        left: 8px;
+        bottom: -26px;
+        margin-bottom: 5%;
+    }
+    .tay-do{
+        position: absolute;
+        right: 173px;
+        bottom: -26px;
+        margin-bottom: 5%;
+    }
+    footer ul {
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        background-color: white;
+    }
+    nav ul li {
+        display: inline-block;
+        padding-left: 3%;
+        font-weight: bold;
+    }
+    nav ul li a {
+        color: black;
+    }
+    .text {
+        font-size: 30px;
+        position: absolute;
+        top: 90%;
+    }
+    main {
+        padding-bottom: 3%;
+    }
+    h2 {
+        padding-top: 3%;
+        margin-left: 10px;
+    }
+    p {
+        margin-left: 10px;
+    }
+    .table-img {
+        display: inline-block;
+    }
+    img {
+        width: 100%;
+        margin: 2% 0% 2% 0%;
+        padding: 3% 2%;
+    }
+    footer {
+        background-color: #d6d6d6;
+        padding-bottom: 2%;
+    }
+}

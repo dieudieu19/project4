@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công viên giải trí Kittyd & Minnied</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="congviencss.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="container">
+    <nav class="row">
+        <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+    </nav>   
+    <main class="row">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img class="slide" src="imageskitty/banner-cong-vien-kitty.png">
+              <div class="text">Công viên giải trí Kittyd và Minnied</div>
+            </div>
+            <div class="mySlides fade">
+              <img class="slide" src="imageskitty/banner-cong-vien-kitty-2.png">
+              <div class="text">Công viên giải trí Kittyd và Minnied</div>
+            </div>
+            <div class="mySlides fade">
+              <img class="slide" src="imageskitty/banner-cong-vien-kitty-3.png">
+              <div class="text">Công viên giải trí Kittyd và Minnied</div>
+            </div>   
+        </div>
+        <br>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+        <div class="row">
+            <h2>Công viên giải trí Kittyd & Minnied</h2>
+            <p>
+                Trải rộng trên diện tích 20 ha của khuôn viên Đại học Võ Trường Toản, Công viên giải trí Kittyd & Minnied được thiết kế theo mô hình công viên giải trí hiện đại, mang đến những trải nghiệm tuyệt vời cho du khách với nhiều khu vực tham quan và các trò chơi đa dạng phù hợp với nhiều lứa tuổi như trẻ em, thanh thiếu niên, người lớn…, để mọi người khi đến đây đều thích thú.
+            </p>
+            <p>
+                Ngoài hệ thống trò chơi cảm giác mạnh như Tàu lượn siêu tốc hay Tàu cướp biển thì Công viên giải trí Kittyd & Minnied còn có các trò chơi nhẹ nhàng như Cưỡi ngựa đu quay, Sứa biển đại dương,...
+            </p>
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <img src="imageskitty/cuoi-ngua-du-quay.png" alt="Cưỡi ngựa đu quay">
+            <img src="imageskitty/tau-cuop-bien.png" alt="Tàu cướp biển">
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <img src="imageskitty/sua-bien-dai-duong.png" alt="Sứa biển đại dương">
+            <img src="imageskitty/tro-choi-van-dong.png" alt="Trò chơi vận động">
+        </div>
+    </main>
+    <footer class="row">
+        <div class="col-lg-4">
+            <h3>VỀ CHÚNG TÔI</h3>
+            <ul>
+                <li>
+                    <a href="#">Về chúng tôi</a>
+                </li>
+                <li>
+                    <a href="#">Tin tức</a>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <h3>DỊCH VỤ CỦA CHÚNG TÔI</h3>
+            <ul>
+                <li>
+                    <a href="#">Tour dài hạng</a>
+                </li>
+                <li>
+                    <a href="#">Tour ngắn hạng</a>
+                </li>
+                <li>
+                    <a href="#">Khách sạn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-4">
+            <h3>THEO DÕI</h3>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
